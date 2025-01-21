@@ -2,6 +2,8 @@ git 跟 github 基本使用
 
 正常使用流程 clone -> branch -> add -> ✨code✨ -> commit -> push
 
+記得要新增".gitignore"以免被分到配置文件或虛擬機
+
 登入指令
 $ git config --global user.name "你的名稱"
 $ git config --global user.email "你的電子郵件"
@@ -11,14 +13,18 @@ $ git init
 
 加入追蹤和提交要用
 $ git add .
-$ git commit -m "這裡打留言"
+$ git commit -m "這裡打卡"
 
 在github創建完專案後，在本地
 $ git remote add origin 專案連結
+或(如果有私鑰的話)
+$ git remote set-url origin git@github.com:LuceZi/your-repo-name
 
 進入主線
 $ git branch -M main
-$ git push -u origin main
+
+新增支線
+$ git checkout -b feature/your-feature-name
 
 在主線上傳用
 $ git push -u origin main
@@ -26,7 +32,7 @@ $ git push -u origin main
 完成下班後要
 $ git add .
 $ git commit -m "你的修改內容"
-$ git push
+$ git push (origin 分支)
 
 要偷(X 下載別人的專案用
 $ git clone 專案連結
@@ -36,5 +42,8 @@ $ git log
 
 看狀態
 $ git status
+
+看分支
+$ git branch
 
 Have a nice day! -Luce
