@@ -1,0 +1,38 @@
+git 跟 github 基本使用
+
+登入指令
+$ git config --global user.name "你的名稱"
+$ git config --global user.email "你的電子郵件"
+
+移動到資料夾後要記得
+$ git init
+
+加入追蹤和提交要用
+git add .
+git commit -m "這裡打留言"
+
+在github創建完專案後，在本地
+git remote add origin 專案連結
+
+進入主線
+git branch -M main
+git push -u origin main
+
+在主線上傳用
+git push -u origin main
+
+完成下班後要
+git add .
+git commit -m "你的修改內容"
+git push
+
+要偷(X 下載別人的專案用
+git clone https://github.com/<你的帳號名>/my-project.git
+
+看日誌
+git log
+
+看狀態
+git status
+
+Have a nice day! -Luce
