@@ -76,20 +76,24 @@ git push -u origin main
 
 ## **下載專案**
 從遠端倉庫複製專案到本地端：  
-    git clone 專案連結
-
+```bash
+git clone 專案連結
+```
 ---
 
 ## **常用指令**
 - **查看狀態**  
     ```bash
     git status
+
 - **查看提交日誌**  
     ```bash
     git log
+
 - **查看分支**  
     ```bash
     git branch
+    
 - **切換分支**  
     ```bash
     git checkout 支線名稱
