@@ -10,7 +10,7 @@
 ---
 
 ## **正常使用流程**
-clone -> branch -> add -> ✨code✨ -> commit -> push
+clone（pull） -> branch -> add -> ✨code✨ -> commit -> push
 
 > 記得新增 `.gitignore`，避免將不必要的檔案（例如配置檔案或虛擬環境）推送到遠端倉庫。
 
@@ -50,29 +50,29 @@ git config --global user.email "你的電子郵件"
 ---
 
 ## **日常操作**
-1. **加入追蹤和提交檔案**  
+1. **上班了！（拉取最新代碼）**  
+    ```bash
+    git pull origin main
+
+2. **加入追蹤和提交檔案**  
     ```bash
     git add . 
     git commit -m "描述修改內容"
 
-2. **建立主分支**  
+3. **建立主分支**  
     ```bash
     git branch -M main
 
-3. **新增並切換到新分支**  
+4. **新增並切換到新分支**  
     ```bash
     git checkout -b feature/your-feature-name
 
-4. **推送分支到遠端倉庫**  
+5. **推送分支到遠端倉庫**  
     ```bash
     git push -u origin 支線
 
 > 若推送到 `main`，請確認更改無誤：
     git push -u origin main
-
-5. **更新主分支（拉取最新代碼）**  
-    ```bash
-    git pull origin main
 
 ---
 
@@ -81,6 +81,7 @@ git config --global user.email "你的電子郵件"
 ```bash
 git clone 專案連結
 ```
+> 不需要再做初始化動作
 ---
 
 ## **常用指令**
