@@ -20,14 +20,17 @@ clone -> branch -> add -> ✨code✨ -> commit -> push
 1. **新增 README 檔案**  
     ```bash
     echo "# 專案名稱" >> README.md
+
 2. **初始化 Git 倉庫**  
 移動到資料夾後執行：  
     ```bash
     git init
+
 3. **新增檔案到暫存區並提交**  
     ```bash
     git add README.md 
     git commit -m "Initial commit"
+    
 4. **設定分支為 `main` 並連結遠端倉庫**  
     ```bash
     git branch -M main 
@@ -93,7 +96,7 @@ git clone 專案連結
 - **查看分支**  
     ```bash
     git branch
-    
+
 - **切換分支**  
     ```bash
     git checkout 支線名稱
