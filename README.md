@@ -18,16 +18,24 @@ clone -> branch -> add -> ✨code✨ -> commit -> push
 
 ## **初始化指令**
 1. **新增 README 檔案**  
-echo "# 專案名稱" >> README.md
+    ```bash
+    echo "# 專案名稱" >> README.md
 2. **初始化 Git 倉庫**  
 移動到資料夾後執行：  
-git init
+    ```bash
+    git init
 3. **新增檔案到暫存區並提交**  
-git add README.md 
-git commit -m "Initial commit"
+    ```bash
+    git add README.md 
+    ```bash 
+    git commit -m "Initial commit"
 4. **設定分支為 `main` 並連結遠端倉庫**  
-git branch -M main git remote add origin 專案連結 
-git push -u origin main
+    ```bash
+    git branch -M main 
+    ```bash
+    git remote add origin 專案連結 
+    ```bash
+    git push -u origin main
 
 > 如果專案已經有遠端倉庫，直接 `clone`，無需重複初始化。
 
