@@ -1,37 +1,39 @@
-git 跟 github 基本使用
+# git 跟 github 基本使用
 
-正常使用流程 clone -> branch -> add -> ✨code✨ -> commit -> push
-
+## **正常使用流程** 
+```text
+clone -> branch -> add -> ✨code✨ -> commit -> push
 記得要新增".gitignore"以免被分到配置文件或虛擬機
 
-初始化指令!!
+## 初始化指令!!
+1.新增 README 檔案：
 $ echo "# 檔案資料夾" >> README.md
+
+2.初始化 Git 倉庫：
 $ git init
+移動到資料夾後要記得
+
+3.新增檔案到暫存區並提交：
 $ git add README.md
 $ git commit -m "first commit"
+
+4.設定分支為 main 並連結遠端倉庫：
 $ git branch -M main
 $ git remote add origin 專案連結
 $ git push -u origin main
 
-$ git remote add origin 專案連結
-$ git branch -M main
-$ git push -u origin main
+如果專案已經有遠端倉庫，直接 clone，無需重複初始化。
 
-登入指令
+## 登入指令
 $ git config --global user.name "你的名稱"
 $ git config --global user.email "你的電子郵件"
 
-移動到資料夾後要記得
-$ git init
+只需設定一次
 
+# 日常操作
 加入追蹤和提交要用
 $ git add .
-$ git commit -m "這裡打卡"
-
-在github創建完專案後，在本地
-$ git remote add origin 專案連結
-或(如果有私鑰的話)
-$ git remote set-url origin git@github.com:LuceZi/your-repo-name
+$ git commit -m "這裡描述修改內容"
 
 進入主線
 $ git branch -M main
@@ -39,24 +41,38 @@ $ git branch -M main
 新增支線
 $ git checkout -b feature/your-feature-name
 
-在主線上傳用
-$ git push -u origin main
+推送到遠端倉庫
+$ git push -u origin 支線
+$ git push -u origin main(小心使用)
 
-完成下班後要
-$ git add .
-$ git commit -m "你的修改內容"
-$ git push (origin 分支)
+更新主分支
+git pull origin main
+
+## 下載專案
 
 要偷(X 下載別人的專案用
 $ git clone 專案連結
 
-看日誌
-$ git log
-
+## 常用指令
 看狀態
 $ git status
+
+看日誌
+$ git log
 
 看分支
 $ git branch
 
-Have a nice day! -Luce
+切換分支
+$ git checkout 支線
+
+## Tips
+如果有私鑰的話可以遠端連結
+$ git remote set-url origin git@github.com:LuceZi/your-repo-name
+多次修改快速上傳
+git add .
+git commit -m "描述修改內容"
+git push
+
+Have a nice day! 
+Luce
