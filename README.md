@@ -43,7 +43,8 @@ git config --global user.email "你的電子郵件"
 ## **日常操作**
 1. **加入追蹤和提交檔案**  
 
-git add . git commit -m "描述修改內容"
+git add . 
+git commit -m "描述修改內容"
 
 2. **建立主分支**  
 git branch -M main
