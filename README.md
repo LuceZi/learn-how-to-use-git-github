@@ -75,7 +75,6 @@ git push -u origin main
 
 ## **下載專案**
 從遠端倉庫複製專案到本地端：  
-    ```bash
     git clone 專案連結
 
 ---
