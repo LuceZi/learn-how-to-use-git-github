@@ -4,6 +4,19 @@ git 跟 github 基本使用
 
 記得要新增".gitignore"以免被分到配置文件或虛擬機
 
+初始化指令!!
+$ echo "# 檔案資料夾" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git branch -M main
+$ git remote add origin 專案連結
+$ git push -u origin main
+
+$ git remote add origin 專案連結
+$ git branch -M main
+$ git push -u origin main
+
 登入指令
 $ git config --global user.name "你的名稱"
 $ git config --global user.email "你的電子郵件"
