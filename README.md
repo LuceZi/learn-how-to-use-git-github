@@ -40,9 +40,10 @@ clone -> branch -> add -> ✨code✨ -> commit -> push
 
 ## **登入指令**
 首次使用需要設定全域使用者資訊（只需設定一次）：  
-- git config --global user.name "你的名稱" 
-- git config --global user.email "你的電子郵件"
-
+```bash
+git config --global user.name "你的名稱" 
+git config --global user.email "你的電子郵件"
+```
 ---
 
 ## **日常操作**
@@ -64,8 +65,9 @@ clone -> branch -> add -> ✨code✨ -> commit -> push
     git push -u origin 支線
 
 > 若推送到 `main`，請確認更改無誤：
+```bash
 git push -u origin main
-
+```
 5. **更新主分支（拉取最新代碼）**  
     ```bash
     git pull origin main
