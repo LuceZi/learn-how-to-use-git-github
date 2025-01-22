@@ -30,7 +30,7 @@ clone -> branch -> add -> ✨code✨ -> commit -> push
     ```bash
     git add README.md 
     git commit -m "Initial commit"
-    
+
 4. **設定分支為 `main` 並連結遠端倉庫**  
     ```bash
     git branch -M main 
@@ -68,9 +68,8 @@ git config --global user.email "你的電子郵件"
     git push -u origin 支線
 
 > 若推送到 `main`，請確認更改無誤：
-```bash
-git push -u origin main
-```
+    git push -u origin main
+
 5. **更新主分支（拉取最新代碼）**  
     ```bash
     git pull origin main
